@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: auto;
+    background-color: rgb(54, 56, 56);
+}
+
+ h1{
+ 	text-align: center;
+ 	color:#839192;
+ 	font-style: italic;
+ 	padding: 40px;
+ 	font-size:50px;
+ 	text-transform: uppercase;
+ 	font-family: 'Ranchers', cursive;
+ 	text-decoration: underline;
+ }
+
+.leftside img{
+    position: absolute;
+    width: 100%;
+    height: 1150px;
+    opacity: 0.3;
+}
+
+.box{
+    position: absolute;
+    left: 24%;
+    top: 18%;
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+   
+}
+
+table{
+    margin:auto;
+    margin-top: 0px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 35px #FCB47B;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
+
+td:hover{
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-delay: 0ms;
+    transform: scale(1.0);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.box1 td:nth-child(2n){
+    background-color: white;
+}
+
+.box2 td:nth-child(2n+1){
+    background-color: white;
+}
+
+.box1 td:nth-child(2n+1){
+    background-color: black;
+}
+
+.box2 td:nth-child(2n){
+    background-color: black;
+}
+
+tr:first-child>td:last-child{
+    border-top-right-radius: 5px;
+}
+
+tr:last-child>td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tr:first-child>td:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr:last-child>td:last-child {
+    border-bottom-right-radius:5px;
+}
+
+.box1 td:hover{
+	animation: 1s box1 forwards;
+	background:#0B215A;
+	transform: scale(1.15);
+}
+.box2 td:hover{
+	animation: 2.5s box2 forwards;
+	background:#BA4A00;
+	transform: scale(1.15);
+}
+
+@keyframes box1{
+	from{
+		opacity: 10;
+	}
+	to{
+		opacity: 0.7;
+	}
+}
+@keyframes box2{
+	from{
+		opacity: 10;
+	}
+	to{
+		opacity: 0.7;
+	}
+}
